@@ -1,0 +1,137 @@
+{
+  "major_id": "rutgers_nb_econ_ba",
+  "institution": "Rutgers - New Brunswick",
+  "school": "School of Arts and Sciences",
+  "department": "Department of Economics",
+  "degree_type": "B.A.",
+  "title": "Economics",
+  "metadata": {
+    "admission_required": true,
+    "min_core_grade": "C",
+    "max_d_grades_in_electives": 1,
+    "residency_policy": "Intermediate Microeconomics, Intermediate Macroeconomics, and Econometrics cannot be transferred from RU-Newark or RU-Camden unless taken in Spring 2011 or earlier."
+  },
+  "requirement_groups": [
+    {
+      "group_id": "econ_prerequisites",
+      "label": "Quantitative Prerequisites",
+      "rule_type": "all_of",
+      "courses": [
+        {
+          "rule_type": "one_of",
+          "label": "Precalculus",
+          "min_grade": "C",
+          "options": ["01:640:111", "01:640:115"]
+        },
+        {
+          "rule_type": "one_of",
+          "label": "Calculus I",
+          "min_grade": "C",
+          "options": ["01:640:130", "01:640:135", "01:640:151"]
+        },
+        {
+          "rule_type": "one_of",
+          "label": "Statistics",
+          "min_grade": "C",
+          "options": ["01:960:285", "01:960:211"]
+        }
+      ]
+    },
+    {
+      "group_id": "econ_core",
+      "label": "Economics Core",
+      "rule_type": "all_of",
+      "courses": [
+        {
+          "code": "01:220:102",
+          "title": "Introduction to Microeconomics",
+          "min_grade": "C",
+          "prereqs": ["01:640:111|01:640:115"]
+        },
+        {
+          "code": "01:220:103",
+          "title": "Introduction to Macroeconomics",
+          "min_grade": "C",
+          "prereqs": ["01:640:111|01:640:115"]
+        },
+        {
+          "code": "01:220:320",
+          "title": "Intermediate Microeconomic Analysis",
+          "min_grade": "C",
+          "prereqs": ["01:220:102", "01:220:103", "01:640:130|01:640:135|01:640:151"]
+        },
+        {
+          "code": "01:220:321",
+          "title": "Intermediate Macroeconomic Analysis",
+          "min_grade": "C",
+          "prereqs": ["01:220:102", "01:220:103", "01:640:130|01:640:135|01:640:151"]
+        },
+        {
+          "code": "01:220:322",
+          "title": "Econometrics",
+          "min_grade": "C",
+          "prereqs": ["01:220:102", "01:220:103", "01:640:130|01:640:135|01:640:151", "01:960:285|01:960:211"]
+        }
+      ]
+    },
+    {
+      "group_id": "econ_electives",
+      "label": "Economics Electives",
+      "rule_type": "count_with_constraints",
+      "total_courses_required": 7,
+      "constraints": [
+        { "min_count": 4, "tier": "upper_level" },
+        { "max_count": 3, "tier": "lower_level" }
+      ],
+      "tiers": {
+        "lower_level": {
+          "description": "300-level Econ or approved accounting/engineering courses; generally require 01:220:102 and 01:220:103.",
+          "regularly_offered": [
+            { "code": "01:220:300", "title": "International Economics", "credits": 3 },
+            { "code": "01:220:301", "title": "Money, Banking and the Financial System", "credits": 3 },
+            { "code": "01:220:390", "title": "Choice and Strategy in Politics", "credits": 3 },
+            { "code": "01:220:395", "title": "Law and Economics", "credits": 3 },
+            { "code": "14:540:343", "title": "Engineering Economics", "credits": 3 },
+            { "code": "33:010:272", "title": "Introduction to Financial Accounting", "credits": 3 },
+            { "code": "33:010:275", "title": "Introduction to Managerial Accounting", "credits": 3 }
+          ]
+        },
+        "upper_level": {
+          "description": "400-level courses; require some combination of 01:220:320, 01:220:321, and/or 01:220:322 (with C or better) and occasionally Calculus II (01:640:136 or 152).",
+          "regularly_offered": [
+            { "code": "01:220:402", "title": "Labor Economics", "credits": 3 },
+            { "code": "01:220:410", "title": "Advanced Macroeconomic Theory", "credits": 3 },
+            { "code": "01:220:411", "title": "Global Financial Crises", "credits": 3 },
+            { "code": "01:220:412", "title": "Monetary Theory and Policy", "credits": 3 },
+            { "code": "01:220:413", "title": "Financial Economics", "credits": 3 },
+            { "code": "01:220:420", "title": "Computational Methods for Research in Economics", "credits": 3 },
+            { "code": "01:220:421", "title": "Economic Forecasting and Big Data", "credits": 3 },
+            { "code": "01:220:422", "title": "Advanced Cross-Sectional and Panel Econometrics", "credits": 3 },
+            { "code": "01:220:423", "title": "Advanced Time Series and Financial Econometrics", "credits": 3 },
+            { "code": "01:220:424", "title": "Machine Learning for Economics", "credits": 3 },
+            { "code": "01:220:431", "title": "Urban Economics", "credits": 3 },
+            { "code": "01:220:432", "title": "Environmental Economics", "credits": 3 },
+            { "code": "01:220:433", "title": "Health Economics", "credits": 3 },
+            { "code": "01:220:435", "title": "International Trade", "credits": 3 },
+            { "code": "01:220:436", "title": "International Finance and Macroeconomics", "credits": 3 },
+            { "code": "01:220:438", "title": "Education Economics", "credits": 3 },
+            { "code": "01:220:439", "title": "Economic Development", "credits": 3 },
+            { "code": "01:220:441", "title": "Industrial Organization", "credits": 3 },
+            { "code": "01:220:460", "title": "Public Economics", "credits": 3 },
+            { "code": "01:220:463", "title": "Economics of Taxation", "credits": 3 },
+            { "code": "01:220:477", "title": "Economics of Population", "credits": 3 },
+            { "code": "01:220:480", "title": "Behavioral and Experimental Economics", "credits": 3 },
+            { "code": "01:220:481", "title": "Economics of Uncertainty", "credits": 3 },
+            { "code": "01:220:482", "title": "Game Theory and Economics", "credits": 3 },
+            { "code": "01:220:483", "title": "Markets, Games and Information", "credits": 3 },
+            { "code": "01:220:485", "title": "Advanced Microeconomic Theory", "credits": 3 },
+            { "code": "01:220:493", "title": "Honors Research Seminar I", "credits": 3 },
+            { "code": "01:220:494", "title": "Honors Research Seminar II", "credits": 3 },
+            { "code": "01:220:495", "title": "Seminar in Economics", "credits": 3 },
+            { "code": "01:220:496", "title": "Seminar in Economics", "credits": 3 }
+          ]
+        }
+      }
+    }
+  ]
+}

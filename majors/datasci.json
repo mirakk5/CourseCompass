@@ -1,0 +1,95 @@
+{
+  "major_id": "rutgers_nb_ds_bs",
+  "institution": "Rutgers - New Brunswick",
+  "school": "School of Arts and Sciences",
+  "department": "Data Science Program",
+  "degree_type": "B.S.",
+  "title": "Data Science",
+  "metadata": {
+    "admission_required": true,
+    "declaration_requirements": [
+      "Data 101",
+      "Statistical Inference (or approved equivalent)"
+    ],
+    "sas_core_required": true,
+    "tracks_available": [
+      { "track_code": "NB219SJ", "name": "Computer Science Track" },
+      { "track_code": "NB219EJ", "name": "Economics Track" },
+      { "track_code": "NB219CJ", "name": "Chemical Data Science Track" }
+    ]
+  },
+  "requirement_groups": [
+    {
+      "group_id": "ds_foundational",
+      "label": "Foundational Courses",
+      "rule_type": "all_of",
+      "courses": [
+        {
+          "code": "01:198:142",
+          "title": "Data 101: Data Literacy",
+          "required_for_declaration": true,
+          "notes": "Required alongside Statistical Inference to declare the major."
+        },
+        {
+          "code": "04:547:225",
+          "title": "Data in Context",
+          "former_codes": ["04:189:220"],
+          "notes": "Updated course code effective March 30, 2026; prior completion under 04:189:220 fulfills requirement."
+        },
+        {
+          "rule_type": "one_of",
+          "label": "Statistical Inference Requirement",
+          "required_for_declaration": true,
+          "options": [
+            { "code": "01:960:291", "title": "Statistical Inference for Data Science" },
+            { "code": "01:960:212", "title": "Statistics II" },
+            { "code": "01:960:384", "title": "Intermediate Statistical Analysis", "former_codes": ["01:960:380"] },
+            { "code": "33:136:385", "title": "Statistical Methods in Business" }
+          ]
+        },
+        {
+          "code": "01:198:336",
+          "title": "Principles of Information and Data Management",
+          "conditional_rule": "Required for Computer Science Track (NB219SJ); dropped for Economics Track."
+        }
+      ],
+      "notes": "Expand '+ Foundational Courses' on the page or check curriculum sheets for additional core math/CS foundational courses (e.g., Calculus, Linear Algebra)."
+    },
+    {
+      "group_id": "ds_degree_tracks",
+      "label": "BS Degree Track Selection",
+      "rule_type": "one_track_of",
+      "tracks": [
+        {
+          "track_id": "cs_track",
+          "program_code": "NB219SJ",
+          "name": "Computer Science Track",
+          "focus": "Calculus, Computer Science, Machine Learning, and Artificial Intelligence",
+          "required_courses": [
+            { "code": "01:198:336", "title": "Principles of Information and Data Management" }
+          ],
+          "curriculum_sheet_url": "https://ds.sas.rutgers.edu/images/10_DS-Major-Computer_Science-Track_240412_1.pdf",
+          "notes": "Expand '+ BS - Computer Science' on the page to populate remaining track courses."
+        },
+        {
+          "track_id": "econ_track",
+          "program_code": "NB219EJ",
+          "name": "Economics Track",
+          "focus": "Microeconomics, Macroeconomics, and advanced Economics courses",
+          "required_courses": [],
+          "curriculum_sheet_url": "https://ds.sas.rutgers.edu/images/11_DS-Major-Economics_240412_1.pdf",
+          "notes": "Expand '+ BS - Economics' on the page to populate track courses."
+        },
+        {
+          "track_id": "chem_track",
+          "program_code": "NB219CJ",
+          "name": "Chemical Data Science Track",
+          "focus": "Chemistry, computation, statistical inference, and data management",
+          "required_courses": [],
+          "curriculum_sheet_url": "https://ds.sas.rutgers.edu/images/12_DS-Major-Chemical_DS_Track_240812_1.pdf",
+          "notes": "Jointly offered by CS, Statistics, and CCB. Expand '+ BS - Chemical Data Science' on the page to populate track courses."
+        }
+      ]
+    }
+  ]
+}
